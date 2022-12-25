@@ -1,0 +1,37 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href={% static 'mysite/css/footer.css' %}>
+    <link rel="stylesheet" href={% static 'mysite/css/navbar.css' %}>
+    <link rel="stylesheet" href={% static 'mysite/css/about.css' %}>
+
+    <title>Ali Yıldırım</title>
+</head>
+<body>
+
+    {% include 'partials/_navbar.html' %}
+
+    <div class="about-container">
+        <div class="about p50">
+            <p class="text-header ta "> Ali Yıldırım </p>
+            <p class="text-about ta">
+                I'm Ali Yıldırım and I'm 21. I'm a Management Information System's student in Pamukkale University.
+                I deal with <b class='bold'>Web</b> developing and <b class='bold'>Python</b> developing. I know diffirent kind of Python's librarys. Also I know
+                <b class='bold'>C, C#, JavaScript, Css, Html, Django and Bootstrap</b>. I have B1+ level English. I want to learn Artificial 
+                Intelligence and Machine Learning in the future.
+            </p>
+        </div>
+        
+    </div>
+
+    {% include 'partials/_footer.html' %}
+    
+
+    <script src={% static 'mysite/js/home.js' %}></script>
+</body>
+</html>

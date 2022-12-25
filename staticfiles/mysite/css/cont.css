@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body{
+    background-color: rgb(218, 218, 218);
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.row{
+    display: flex;
+    gap: 200px;
+}
+
+.contact-header{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 50px;
+    background: linear-gradient(to right,rgb(238, 149, 48),rgb(225, 79, 21),rgb(169, 7, 161));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-bottom: 3px solid ;
+    border-image: linear-gradient(to left,rgb(235, 138, 47),rgb(169, 7, 161)) 1;
+}
+
+.item{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 70px;
+    text-align: center;
+    margin: 20px;
+    color: black;
+    text-decoration: none;
+}
+
+.item:hover{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.wp:hover{
+    background: linear-gradient(to right,rgb(152, 215, 103),rgb(7, 110, 7));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.ig:hover{
+    background: linear-gradient(to right,rgba(255, 136, 0, 0.792),rgb(111, 4, 183));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.tw:hover{
+    background: linear-gradient(to right,rgba(96, 169, 242, 0.792),rgb(5, 67, 114));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.git:hover{
+    background: linear-gradient(to right,rgb(104, 16, 192),rgba(9, 10, 112, 0.792));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.linkedin:hover{
+    background: linear-gradient(to right,rgba(36, 193, 237, 0.792),rgb(39, 29, 227));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.gmail:hover{
+    background: linear-gradient(to right,rgb(28, 61, 225),rgba(210, 37, 14, 0.792),rgb(194, 194, 27),rgb(7, 125, 7));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+@media screen and (max-width: 300px) {
+    .item{
+        font-size: 50px;
+    }
+
+    .contact-header{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .row{
+        flex-direction: column;
+        gap: 0;
+    }
+}
+
+

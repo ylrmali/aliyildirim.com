@@ -1,0 +1,195 @@
+
+
+#card-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('background.jpg') ;
+    height: 700px;
+} 
+
+
+
+.card{
+    margin-top: 5%;
+    margin-bottom: 0;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: rgba(39, 39, 39, 0.5);
+    box-shadow: -2px 5px 15px  rgb(0, 0, 0);
+}
+
+.card:hover{
+    border-color: rgb(245, 247, 164);
+    box-shadow: -2px 5px 15px  rgb(243, 245, 135);
+}
+
+.card-text{
+    color: white;
+    font-size: 20px;
+    font-family: "Lato", sans-serif;
+
+}
+
+
+
+.hiddenCard{
+    display: none;
+}
+
+.showCard{
+    display: block;
+}
+
+#btnShowDetail{
+    border-radius: 10px;
+    padding: 5px;
+    background-color: rgb(240, 240, 143);
+    font-family: "Lato", sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+#btnShowDetail:hover{
+    background-color: rgb(189, 189, 110);
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.col-1 {width: 8.33%};
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.fr{
+    right: 0;
+}
+
+
+
+.subHeader{
+    color: white;
+    font-family: "Lato", sans-serif;
+    font-size: 17px;
+}
+
+.text{
+    color: rgb(186, 233, 247);
+    font-family: "Lato", sans-serif;
+    margin-left: 5%;
+}
+
+.text:hover{
+    color: orange;
+    
+    transition: all .5s ease ;
+}
+
+.text a{
+    text-decoration: none;
+    color: rgb(186, 233, 247);
+}
+
+.text a:hover{
+    color: rgb(69, 69, 242);
+    transition: all .5s ease ;
+
+}
+
+.mt3{
+    margin-top: 5px;
+}
+
+.icon{
+    height: 48px;
+    margin-left: 20%;
+}
+
+#btnCloseDetails{
+    border-radius: 10px;
+    padding: 5px;
+    background-color: rgb(240, 240, 143);
+    font-family: "Lato", sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#btnCloseDetails:hover{
+    background-color: rgb(189, 189, 110);
+}
+
+
+@media screen and (max-width:396px) {
+
+    #card-container{
+        height: 500px!important;
+    }
+
+    .col-6{
+        width: 95%!important;
+    }
+}
+
+
+@media screen and (max-width:600px) {
+    .subHeader{
+        font-size: 10px;
+    }
+    
+    .text{
+        font-size: 10px;
+        margin-left: 5px;
+
+    }
+    
+    .mt3{
+        margin-top: 0;
+    }
+    
+    .icon{
+        height: 24px;
+        margin-left: 0;
+    }
+
+    #btnCloseDetails{
+        font-size: 10px;
+        cursor: pointer;
+    }
+
+    .col-6{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:855px) {
+
+    .subHeader{
+        font-size: 13px;
+    }
+    
+    .text{
+        font-size: 13px;
+        margin-left: 5px;
+    }
+    
+    .icon{
+        height: 36px;
+        margin-left: 0;
+    }
+    
+    
+}

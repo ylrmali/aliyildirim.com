@@ -1,0 +1,41 @@
+{% load static %}
+
+<body oncontextmenu="return false;">
+    
+
+<div id="container">
+    <div id="row" class='jc'>
+        <div id='brand'>
+            <a href="#">yıldırım</a>
+        </div>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        
+    </div>
+    <navbar>
+        <div class="nav">
+            <ul class='nav-menu'>
+                <li id='nav-item' class="nav-item li ">
+                    <a href="{% url 'home' %}" >HOME</a>
+                </li>
+                <li id='nav-item' class="nav-item li" >
+                    <a href="{% url 'about' %}" >ABOUT</a>
+                </li>
+                <li id='nav-item' class="nav-item li">
+                    <a href="{% url 'contact' %}" >CONTACT</a>
+                </li>
+                
+            </ul>
+        </div>
+    </navbar>
+    
+</div>
+
+</body>
+
+
+
+

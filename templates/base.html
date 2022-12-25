@@ -1,0 +1,41 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link rel="stylesheet" href={% static 'mysite/css/navbar.css' %}>
+    <link rel="stylesheet" href={% static 'mysite/css/card.css' %}>
+    <link rel="stylesheet" href={% static 'mysite/css/myworks.css' %}>
+    <link rel="stylesheet" href={% static 'mysite/css/clicked.css' %}>
+    <link rel="stylesheet" href={% static 'mysite/css/footer.css' %}>
+    <title>Document</title>
+
+    <style>
+        body{
+            background-color: rgb(218, 218, 218);
+        }
+    </style>
+</head>
+<body oncontextmenu="return false;">
+    {% include 'partials/_navbar.html' %}
+
+    {% include 'partials/_me.html' %}
+
+    {% include 'partials/_myworks.html' %}
+
+    {% include 'partials/_clicked.html' %}
+    
+    {% include 'partials/_footer.html' %}
+
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src={% static 'mysite/js/home.js' %}></script>
+    <script src={% static 'mysite/js/card1.js' %}></script>
+    <script src={% static 'mysite/js/clicked.js' %}></script>
+</body>
+</html>

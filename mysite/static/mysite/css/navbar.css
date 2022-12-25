@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Lato");
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&display=swap');
+/* font-family: 'Arizonia', cursive;
+font-family: "Lato", sans-serif; */
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#container{
+    background-color: #262626;
+}
+
+#row{
+    display: flex;
+}
+
+.jc{
+    justify-content: center;
+    text-align: center;
+}
+
+#brand{
+    padding: 20px;
+}
+
+#brand a{
+    color: orange;
+    font-size: 50px;
+    font-family: 'Arizonia', cursive;
+    text-decoration: none;
+ }
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    border-radius: 30px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: orange;
+}
+
+.nav-menu{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+    padding-left: 0;
+    gap: 40px;
+    margin-bottom: 0;
+}
+
+.nav-item{
+    list-style: none;
+    transition: 0.7s ease;
+
+}
+
+.nav-item a{
+    color: white;
+    text-decoration: none;
+    font-size: 19px;
+    font-family: "Lato", sans-serif;
+    padding: 5px;
+}
+
+.nav-item a:hover{
+    transition: 0.7s ease;
+    color: orange;
+    border-bottom: 2px solid orange;
+}
+
+.active{
+    border-bottom: 2px solid orange;
+}
+
+
+
+
+
+
+@media screen and (max-width:600px) {
+
+    .icon{
+        display: block;
+
+    }
+
+    
+    .nav-menu{
+        display: none;
+    }
+
+
+    .hamburger{
+        display: block;
+        margin-top: 42px;
+        
+    }
+
+    .hamburger.actived .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.actived .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.actived .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu{
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #262626;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-item{
+        margin: 16px 0;
+    }
+
+    .nav-menu.actived{
+        left: 0;
+        display: flex;
+        margin-bottom: 0;
+    }
+
+    .active{
+        border: 0;
+    }
+
+    .nav-item a{
+        font-size: 15px;
+    }
+
+    #brand{
+        margin-left: 20px;
+        width: 60%;
+    }
+
+
+
+
+
+}

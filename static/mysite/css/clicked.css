@@ -1,0 +1,60 @@
+.click-container{
+    padding: 20px;
+}
+
+.click-header{
+    font-size: 40px;
+    font-family: "Lato", sans-serif;
+    font-weight: bold;
+    text-align: center;
+    background: -webkit-repeating-linear-gradient(rgb(255, 2, 2), rgb(246, 148, 1));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.click-card{
+    width: 50%;
+    text-align: center;
+    border: 3px solid transparent;
+    background: linear-gradient(white, white) padding-box,
+              linear-gradient(to right, rgb(255, 2, 150), rgb(91, 1, 246)) border-box;
+  border-radius: 20px;
+    /* border-image: linear-gradient(to right,rgb(255, 2, 150), rgb(91, 1, 246)) 1; */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+.click-number p{
+    font-size: 80px;
+    font-weight: bold;
+    font-family: "Lato", sans-serif;
+    background: -webkit-repeating-linear-gradient(rgb(255, 2, 150), rgb(91, 1, 246));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.click-text{
+    font-family: "Lato", sans-serif;
+    color: darkblue;
+    font-size: 20px;
+    font-style: italic;
+}
+
+@media screen and (max-width:400px) {
+    .click-card{
+        width: 90%!important;
+    }
+}
+
+@media screen and (min-width:600px) {
+    .click-card{
+        width: 40%;
+    }
+}
+
+
+
+
